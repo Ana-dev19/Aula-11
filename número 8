@@ -1,0 +1,9 @@
+ comparar_numeros(a, b, c, d, e, f):
+    if a == b:
+        print("A é igual a B")
+    if c != d:
+        print("C é diferente de D")
+    if e > f:
+        print("E é maior que F")
+
+comparar_numeros(1, 2, 3, 4, 5, 6)

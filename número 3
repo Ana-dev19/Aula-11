@@ -1,0 +1,21 @@
+ArrayList<Double> lista = new ArrayList<>();
+
+double valorLido;
+while (true) {
+  valorLido = input.nextDouble();
+  if (valorLido == 0) {
+    break;
+  }
+  lista.add(valorLido);
+}
+double maior, menor;
+maior = menor = lista.get(0);
+for (Double valor: lista) {
+  if (valor > maior) {
+    maior = valor;
+  } else if (valor < menor) {
+    menor = valor;
+  }
+}
+System.out.println("maior " + maior);
+System.out.println("menor " + menor);
